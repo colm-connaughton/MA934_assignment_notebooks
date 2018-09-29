@@ -1,5 +1,5 @@
 # Define list type
-type LList
+struct LList
     data::KVPair
     next::Nullable{LList}
 end
