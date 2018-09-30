@@ -1,8 +1,8 @@
 # Define list type
-mutable struct LinkedList
-    data::KeyValuePair
-    next::Union{LinkedList,Nothing}
-end
+#mutable struct LinkedList
+#    data::KeyValuePair
+#    next::Union{LinkedList,Nothing}
+#end
 
 # Prepend data to list
 function prepend(list::Union{LinkedList,Nothing}, data::KeyValuePair) 
