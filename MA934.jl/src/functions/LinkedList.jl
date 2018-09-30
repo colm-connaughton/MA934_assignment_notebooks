@@ -24,7 +24,7 @@ function append(list::Union{LinkedList, Nothing}, data::KeyValuePair)
 end
 
 # Function to build a list from an array of Pair objects
-function build(dataArray::Array{KeyValuePair, 1})
+function buildlist(dataArray::Array{KeyValuePair, 1})
     L = LinkedList(dataArray[1], Nothing())
     for i in 2:length(dataArray)
         L=append(L, dataArray[i])
